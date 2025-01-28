@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Полиночке</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+
+      body {
+        background-color: #fff9f9;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        margin: 0;
+        padding: 20px;
+        font-family: "Dancing Script", cursive;
+      }
+
+      h1 {
+        color: #ff69b4;
+        text-align: center;
+        font-size: 2.5em;
+        margin-bottom: 30px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      h2,
+      strong {
+        color: #ff69b4;
+        text-align: center;
+        font-size: 2em;
+        line-height: 1.5;
+        max-width: 800px;
+        margin: 20px auto;
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.8s ease, transform 0.8s ease;
+      }
+
+      strong {
+        font-size: 3em;
+      }
+
+      .heart {
+        color: #ff69b4;
+        font-size: 24px;
+        margin: 0 10px;
+      }
+
+      .line {
+        width: 2px;
+        height: 100px;
+        background-color: #ff69b4;
+        margin: 20px auto;
+        opacity: 0;
+        transform: scaleY(0);
+        transition: opacity 0.8s ease, transform 0.8s ease;
+      }
+
+      .visible {
+        opacity: 1;
+        transform: translateY(0) scaleY(1);
+      }
+
+      #timer {
+        color: #ff69b4;
+        font-size: 2em;
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      img {
+        border-radius: 15px;
+      }
+
+      .photo-row {
+        display: flex;
+        justify-content: center; /* Центрирует фотографии по горизонтали */
+        gap: 20px; /* Отступ между фотографиями */
+        margin: 20px 0; /* Отступ сверху и снизу */
+      }
+
+      .photo-row img {
+        max-width: 100%; /* Чтобы фотографии не вылезали за пределы контейнера */
+        height: auto; /* Сохраняет пропорции */
+        border-radius: 10px; /* Слегка закругляет углы */
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      <i class="fas fa-heart heart"></i>
+      Привет, любимая Полина! Это небольшая карта, как прошли эти прекрасные три
+      месяца наших отношений!
+      <i class="fas fa-heart heart"></i>
+    </h1>
+
+    <div id="timer">Вместе уже: 0 дней, 0 часов, 0 минут и 0 секунд</div>
+
+    <strong>21 октября</strong>
+    <h2>
+      началось наше первое общение. Медосмотр, прогулочка в парке со мной и
+      Ромой, парк победы, поездка на невский. В этот день я начал понимать, что
+      ты мне очень нравишься, ведь я увидел в тебе искреннего и просто доброго
+      человека
+    </h2>
+    <div class="line"></div>
+    <strong>23 октября</strong>
+    <h2>
+      В этот день, мы погуляли на беговой, показала мне парк 300-летия. Так
+      прекрасно поговорили по-душам.Не могли найти друг друга на площади
+      "Маяковской"
+    </h2>
+    <img src="photos\photo_2025-01-28_06-34-19.jpg" width="350" />
+    <div class="line"></div>
+    <strong>28 октября</strong>
+    <h2>
+      Спустя неделю общения, мы рассказали друг другу о своих чувствах. Не
+      передать ту радость, когда я узнал, что все взаимно, ведь на тот момент,
+      ты мне безумно нравилась. Так классно было, когда чмокнула на прощание!
+    </h2>
+    <img src="photos\images.jpg" width="350" />
+    <div class="line"></div>
+    <strong>29 октября</strong>
+    <h2>
+      На следующий день мы впервые поцеловались, это было так классно, никогда
+      его не забуду.
+    </h2>
+    <img src="photos\5c58d28c73534168baf674b8.png" width="350" />
+    <div class="line"></div>
+    <strong>1 ноября</strong>
+    <h2>
+      Ты улетела домой. Было очень-очень грустно без тебя, но ты меня очень
+      радовала, когда скидывала всякие приколюхи со своей галереи. Обожаю, когда
+      ты так делаешь.
+    </h2>
+    <img src="photos\photo_2025-01-28_06-49-38.jpg" width="350" />
+    <div class="line"></div>
+    <strong>6 ноября</strong>
+    <h2>
+      Мы сходили в кино на "Венома". Люблю ходить с тобой в кино, если честно.
+      Да и вообще, люблю с тобой везде ходить.
+    </h2>
+    <div class="line"></div>
+    <strong>11 ноября</strong>
+    <h2>
+      Впервые с фотиком сходили погулять. Учила меня фотографировать. Иногда так
+      стыдно становилось, что у меня вообще не получается, но вроде парочку
+      классных фоток получилось!
+    </h2>
+    <img src="photos\photo_2025-01-28_13-00-14.jpg" width="350" />
+    <div class="line"></div>
+    <strong>14 ноября</strong>
+    <h2>
+      Сходили в ленту под дождем. Промокли блин до нитки, но зато весело было.
+      Обожаю ходить с тобой в ленту. Да и вообще по тц-шкам и тому подобное.
+    </h2>
+    <img src="photos\photo_2025-01-28_13-17-51.jpg" width="350" />
+    <h2>
+      Еще мы на уточек смотрели, это так прикольно было. Правда, я зыбыл в какой
+      это день было, поэтому пусть будет тут.
+    </h2>
+    <img src="photos\photo_2025-01-28_13-19-55.jpg" width="350" />
+    <div class="line"></div>
+    <strong> 21 ноября </strong>
+    <h2>
+      Собрались сходить на выставку какую-то. Так и не получилось, но зато
+      прикольно погуляли по новой голландии. Впервые сходили в киношку в
+      галерее. Такие фоточки рук милые.
+    </h2>
+    <div class="photo-row">
+      <img src="photos/hands.jpg" width="350" />
+      <img src="photos/idlang.jpg" width="350" />
+    </div>
+    <div class="line"></div>
+    <strong>5 декабря</strong>
+    <h2>
+      Сходили в гранд макет. Было круто и нтересно, но блин не нашли ни Бийска,
+      не Шимана на макете. Что за фигня, могли бы и добавить, хорошие же города.
+    </h2>
+    <div class="photo-row">
+      <img src="photos\we.jpg" width="350" />
+      <img src="photos\pig.jpg" width="350" />
+      <img src="photos\we2.jpg" width="500" />
+    </div>
+    <h2>
+      Надели парные кофточки. Обожаю ее. Когда надеваю, сразу вспоминаю о тебе и
+      какая ты у меня хорошая и заботливая.
+    </h2>
+    <div class="line"></div>
+    <h2>
+        А вот просто классная фотография. Безумно нравится, как ты обрабатываешь фото, у тебя настоящий талант.
+    </h2>
+    <img src="photos\photo_2025-01-28_13-41-24.jpg" width="350">
+
+    <script>
+      // Таймер
+      function updateTimer() {
+        const startDate = new Date("2024-10-28T00:00:00");
+        const now = new Date();
+        const diff = now - startDate;
+
+        const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+        const hours = Math.floor(
+          (diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+        document.getElementById(
+          "timer"
+        ).innerText = `Вместе уже: ${days} дней, ${hours} часов, ${minutes} минут и ${seconds} секунд`;
+      }
+      setInterval(updateTimer, 1000);
+
+      // Анимация появления текста
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          }
+        });
+      });
+
+      document.querySelectorAll("h2, strong, .line").forEach((element) => {
+        observer.observe(element);
+      });
+    </script>
+  </body>
+</html>
